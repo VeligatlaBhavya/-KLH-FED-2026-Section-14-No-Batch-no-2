@@ -1,0 +1,21 @@
+// Basic Logic Gate Module
+module LogicGates (
+    input  wire A,
+    input  wire B,
+    output wire out_AND,
+    output wire out_OR,
+    output wire out_NAND,
+    output wire out_NOR,
+    output wire out_XOR,
+    output wire out_NOT
+);
+
+    // Gate Operations
+    assign out_AND  = A & B;   // AND Gate
+    assign out_OR   = A | B;   // OR Gate
+    assign out_NAND = ~(A & B); // NAND Gate
+    assign out_NOR  = ~(A | B); // NOR Gate
+    assign out_XOR  = A ^ B;   // XOR Gate
+    assign out_NOT  = ~A;      // NOT Gate
+
+endmodule
